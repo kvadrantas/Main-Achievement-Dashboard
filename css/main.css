@@ -119,8 +119,15 @@ li span {
 
 .examples {
     display: inline-block;
+    text-align: center;
     height: 300px;
     width: 100%;
+}
+
+.examples img {
+    height: 250px;
+    margin: 25px 40px 25px 40px;
+    border: 1px solid #676f75;
 }
 
 .dashboard {
