@@ -1,0 +1,121 @@
+/* https://www.dottedsquirrel.com/circular-progress-css/ */
+/* *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+  }
+  html, body{
+    display:grid;
+    height:100%;
+    text-align: center;
+    place-items: center;
+    background: #dde6f0;
+  } */
+
+  .circular{
+    height: 150px;
+    width: 150px;
+    position: relative;  
+  }
+
+  .circular .inner{
+    position: absolute;
+    z-index: 6;
+    top: 50%;
+    left: 50%;
+    height: 136px;
+    width: 136px;
+    margin: -68px 0 0 -68px;
+    background: #ebeff1;
+    border-radius: 100%;
+  }
+
+  .circular .number{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    z-index:10;
+    font-size:18px;
+    font-weight:500;
+    color:#4158d0;
+  }
+
+  .circular .bar{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #fff;
+    -webkit-border-radius: 100%;
+    clip: rect(0px, 150px, 150px, 75px);
+  }
+
+  .circle .bar .progress{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    -webkit-border-radius: 100%;
+    clip: rect(0px, 75px, 150px, 0px);
+    /* background: #e74d3d; */
+  }
+
+/* ANIMATE */
+
+.circle .left .progress{
+    z-index:1;
+    animation: left .4s linear both;
+  }
+  @keyframes left{
+    100%{
+      transform: rotate(180deg);
+    }
+  }
+  .circle .right {
+    transform: rotate(180deg);
+    z-index:3;
+   
+  }
+  .circle .right .progress{
+    animation: right .4s linear both;
+    animation-delay:.4s;
+  }
+  @keyframes right{
+    100%{
+      transform: rotate(180deg);
+    }
+  }
+
+.progress-bar1,
+.progress-bar2,
+.progress-bar3,
+.progress-bar4 {
+    float: left;
+    padding: 80px 0 80px 80px;
+    text-align: center;
+}
+
+.one {
+    background: #e74d3d;
+}
+
+.two {
+    background: #f39c12;
+}
+
+.three {
+    background: #3498db;
+}
+
+.four {
+    background: #4cd46c;
+}
+
+.label1 {
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.label2 {
+    font-size: 14px;
+}
