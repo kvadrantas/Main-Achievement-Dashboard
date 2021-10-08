@@ -1,16 +1,5 @@
 /* https://www.dottedsquirrel.com/circular-progress-css/ */
-/* *{
-    margin: 0;
-    padding: 0;
-    font-family: 'Arial', sans-serif;
-  }
-  html, body{
-    display:grid;
-    height:100%;
-    text-align: center;
-    place-items: center;
-    background: #dde6f0;
-  } */
+
 
   .circular{
     height: 150px;
@@ -59,13 +48,18 @@
     /* background: #e74d3d; */
   }
 
+  .number i {
+    font-size: 30px;
+    padding-bottom: 10px;
+  }
+
 /* ANIMATE */
 
-.circle .left .progress{
+/* .circle .left .progress{
     z-index:1;
     animation: left .4s linear both;
     animation-delay:.4s;
-  }
+  } */
   /* @keyframes left{
     100%{
       transform: rotate(180deg);
@@ -76,10 +70,10 @@
     z-index:3;
    
   }
-  .circle .right .progress{
+  /* .circle .right .progress{
     animation: right .4s linear both;
-    /* animation-delay:.4s; */
-  }
+    animation-delay:.4s; 
+  } */
   /* @keyframes right{
     100%{
       transform: rotate(180deg);
@@ -95,19 +89,19 @@
     text-align: center;
 }
 
-.one {
+.color1 {
     background: #e74d3d;
 }
 
-.two {
+.color2 {
     background: #f39c12;
 }
 
-.three {
+.color3 {
     background: #3498db;
 }
 
-.four {
+.color4 {
     background: #4cd46c;
 }
 
