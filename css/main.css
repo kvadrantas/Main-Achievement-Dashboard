@@ -122,12 +122,39 @@ li span {
     text-align: center;
     height: 300px;
     width: 100%;
+    overflow: hidden;
+}
+
+.examples-content {
+    width: 100%;
 }
 
 .examples img {
     height: 250px;
     margin: 25px 40px 25px 40px;
-    border: 1px solid #676f75;
+    border: 1px solid #676f75; 
+    /* padding: 1px; */
+}
+
+@keyframes examples {
+    0% {
+        margin-left: 150vh;
+    }
+
+    100% {
+        margin-left: 40px;
+    }
+}
+
+.glowing-border {
+    border: 2px solid #dadada;
+    border-radius: 7px;
+}
+
+.examples img:hover { 
+    outline: none;
+    border-color: #9ecaed;
+    box-shadow: 0 0 10px #9ecaed;
 }
 
 .dashboard {

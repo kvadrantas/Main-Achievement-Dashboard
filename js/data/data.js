@@ -1,7 +1,7 @@
 const data = [
     {
-    img1: './jpg/Drafts/0.png',
-    img2: './jpg/Drafts/1.png',
+    img1: './jpg/0.png',
+    img2: './jpg/1.png',
     pb1: 30,
     pb2: 0,
     pb3: 0,
@@ -16,8 +16,8 @@ const data = [
     icon4: '<i class="fab fa-react"></i>'
     },
     {
-    img1: './jpg/Drafts/2.png',
-    img2: './jpg/Drafts/3.png',
+    img1: './jpg/2.png',
+    img2: './jpg/3.png',
     pb1: 70,
     pb2: 40,
     pb3: 0,
@@ -32,8 +32,8 @@ const data = [
     icon4: '<i class="fab fa-react"></i>'
     },
     {
-    img1: './jpg/Drafts/4.png',
-    img2: './jpg/Drafts/5.png',
+    img1: './jpg/4.png',
+    img2: './jpg/5.png',
     pb1: 100,
     pb2: 80,
     pb3: 55,
@@ -48,8 +48,8 @@ const data = [
     icon4: '<i class="fab fa-react"></i>'
     },
     {
-    img1: './jpg/Drafts/6.png',
-    img2: './jpg/Drafts/7.png',
+    img1: './jpg/6.png',
+    img2: './jpg/7.png',
     pb1: 100,
     pb2: 100,
     pb3: 100,
@@ -64,8 +64,8 @@ const data = [
     icon4: '<i class="fab fa-react"></i>'
     },
     {
-    img1: './jpg/Drafts/8.png',
-    img2: './jpg/Drafts/9.png',
+    img1: './jpg/8.png',
+    img2: './jpg/9.png',
     pb1: 100,
     pb2: 100,
     pb3: 100,

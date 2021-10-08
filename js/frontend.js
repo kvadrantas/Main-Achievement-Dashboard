@@ -67,8 +67,10 @@ function clearProgressBar() {
 function renderExamples(i) {
     const examplesDOM = document.querySelector('.examples');
     examplesDOM.innerHTML = `
-        <img src=${data[i].img1} alt="My work">
-        <img src=${data[i].img2} alt="My work">
+        <div class="examples-content" style="animation: examples .25s linear;">
+            <img src=${data[i].img1} alt="My work">
+            <img src=${data[i].img2} alt="My work">
+        </div>
     `
     if (data[i].img3) examplesDOM.innerHTML += `<img src=${data[i].img3} alt="My work">`;
 }
