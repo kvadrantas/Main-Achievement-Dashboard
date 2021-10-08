@@ -1,9 +1,9 @@
 import { data } from "./data/data.js";
-const pb1 = 70;
-console.log(data);
 
 let progressBarAnimationDOM = document.querySelector('style');
 let progressBarDOM = document.querySelector('.progress-bar');
+
+// Renders all 4 progress bars per section and separate animations for each
 function renderProgressBar(i) {
     setTimeout(() => {
         for (let j = 1; j <= 4; j++) {
@@ -57,29 +57,40 @@ function renderProgressBar(i) {
     }, 55);
 }
 
+// Clears progress bar section and animation content
 function clearProgressBar() {
     progressBarAnimationDOM.innerHTML = '';
     progressBarDOM.innerHTML = '';
 }
 
-// NAVIGATION BUTTONS LISTENER
-const navigationDOM = document.querySelectorAll('.navigation li');
-navigationDOM.forEach((element, index) => {
-    element.addEventListener('click', () => {
+// Renders example images 
+function renderExamples(i) {
+    const examplesDOM = document.querySelector('.examples');
+    examplesDOM.innerHTML = `
+        <img src=${data[i].img1} alt="My work">
+        <img src=${data[i].img2} alt="My work">
+    `
+    if (data[i].img3) examplesDOM.innerHTML += `<img src=${data[i].img3} alt="My work">`;
+}
 
-        clearProgressBar()
-        renderProgressBar(index);
-    })
-});
-
-// PERCENTAGE COUNTER
+// Percentage counter
 function counter(obj, start, end, duration, icon) {
     if (start <= end) {
         setTimeout(() => {
             obj.innerHTML = `${icon}<br>${start} %`;
-            console.log(start);
             counter(obj, ++start, end, duration, icon);
         }, duration / end);
     }
 }
 
+// NAVIGATION BUTTONS LISTENER
+// onclick renders all  content
+const navigationDOM = document.querySelectorAll('.navigation li');
+navigationDOM.forEach((element, index) => {
+    element.addEventListener('click', () => {
+        renderExamples(index);
+        clearProgressBar();
+        renderProgressBar(index);
+
+    })
+});

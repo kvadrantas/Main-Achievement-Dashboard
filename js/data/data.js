@@ -1,5 +1,7 @@
 const data = [
     {
+    img1: './jpg/Drafts/0.png',
+    img2: './jpg/Drafts/1.png',
     pb1: 30,
     pb2: 0,
     pb3: 0,
@@ -14,6 +16,8 @@ const data = [
     icon4: '<i class="fab fa-react"></i>'
     },
     {
+    img1: './jpg/Drafts/2.png',
+    img2: './jpg/Drafts/3.png',
     pb1: 70,
     pb2: 40,
     pb3: 0,
@@ -28,6 +32,8 @@ const data = [
     icon4: '<i class="fab fa-react"></i>'
     },
     {
+    img1: './jpg/Drafts/4.png',
+    img2: './jpg/Drafts/5.png',
     pb1: 100,
     pb2: 80,
     pb3: 55,
@@ -42,6 +48,24 @@ const data = [
     icon4: '<i class="fab fa-react"></i>'
     },
     {
+    img1: './jpg/Drafts/6.png',
+    img2: './jpg/Drafts/7.png',
+    pb1: 100,
+    pb2: 100,
+    pb3: 100,
+    pb4: 100,
+    label1: 'HTML/CSS',
+    label2: 'Javascript',
+    label3: 'Node.js',
+    label4: 'React',
+    icon1: '<i class="fab fa-html5"></i>',
+    icon2: '<i class="fab fa-js-square"></i>',
+    icon3: '<i class="fab fa-node-js"></i>',
+    icon4: '<i class="fab fa-react"></i>'
+    },
+    {
+    img1: './jpg/Drafts/8.png',
+    img2: './jpg/Drafts/9.png',
     pb1: 100,
     pb2: 100,
     pb3: 100,
