@@ -66,13 +66,23 @@ function clearProgressBar() {
 // Renders example images 
 function renderExamples(i) {
     const examplesDOM = document.querySelector('.examples');
-    examplesDOM.innerHTML = `
-        <div class="examples-content" style="animation: examples .25s linear;">
-            <img src=${data[i].img1} alt="My work">
-            <img src=${data[i].img2} alt="My work">
-        </div>
+    if (!data[i].img3) {
+        examplesDOM.innerHTML = `
+            <div class="examples-content" style="animation: examples .25s linear;">
+                <img src=${data[i].img1} alt="My work">
+                <img src=${data[i].img2} alt="My work">
+            </div>
     `
-    if (data[i].img3) examplesDOM.innerHTML += `<img src=${data[i].img3} alt="My work">`;
+    } else {
+        examplesDOM.innerHTML = `
+            <div class="examples-content" style="animation: examples .25s linear;">
+                <img src=${data[i].img1} alt="My work">
+                <img src=${data[i].img2} alt="My work" style="margin-left: 0;">
+                <img src=${data[i].img3} alt="My work" style="margin-left: 0;">
+            </div>
+    `
+    }
+
     document.querySelectorAll('img').forEach((x, j) => x.addEventListener('click', () => {
         const descriptionDOM = document.querySelector('.example-description');
         let featuresHTML = '';
@@ -97,8 +107,8 @@ function renderExamples(i) {
                     ${featuresHTML}
                 </ul>
                 <div class="git">
-                <a href="${data[i].gitPreview}" target="_blank" title="Website preview"><i class="fas fa-globe"></i></a>
-                <a href="${data[i].gitRepository}" target="_blank" title="Github repository"><i class="fab fa-github"></i></a>
+                <a href="${data[i][`content${j}`].gitPreview}" target="_blank" title="Website preview"><i class="fas fa-globe"></i></a>
+                <a href="${data[i][`content${j}`].gitRepository}" target="_blank" title="Github repository"><i class="fab fa-github"></i></a>
                 </div>
             </div>
 
