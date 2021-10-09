@@ -13,7 +13,21 @@ const data = [
     icon1: '<i class="fab fa-html5"></i>',
     icon2: '<i class="fab fa-js-square"></i>',
     icon3: '<i class="fab fa-node-js"></i>',
-    icon4: '<i class="fab fa-react"></i>'
+    icon4: '<i class="fab fa-react"></i>',
+    content1: {
+        h1: 'Simple HTML form 1',
+        description: 'This is beginning of Javascript course and these 2 examples represent very first attempt to use some simple html tags',
+        features: ['Responsive - no', 'Database - no', 'Express Server - no', 'Handlebars - no', 'DOM - no', 'Promises - no', 'HTML - yes', 'CSS - inline', 'Javascript - no', 'Node.js - no', 'React - no'],
+        p: 'afsldkjf asljdf alsdj falsdj flkasdj alsdjk'
+    },
+    content2: {
+        h1: 'Simple HTML form 2',
+        description: 'This is beginning of Javascript course and these 2 examples represent very first attempt to use some simple html tags',
+        features: ['Responsive - no', 'Database - no', 'Express Server - no', 'Handlebars - no'],
+        p: 'afsldkjf asljdf alsdj falsdj flkasdj alsdjk'
+    },
+    gitPreview: 'https://kvadrantas.github.io/2-serlokas/',
+    gitRepository: 'https://github.com/kvadrantas/2-serlokas/blob/master/readme.md',
     },
     {
     img1: './jpg/2.png',

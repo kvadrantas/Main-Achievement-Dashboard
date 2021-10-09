@@ -1,4 +1,4 @@
-/* body * { border: 1px solid green; } */
+/* body * { border-inline: 1px solid green; } */
 body {
     font-family: 'Roboto Condensed', sans-serif;
     color: #676f75;
@@ -24,7 +24,9 @@ body {
 
 .content { 
     display: inline-block;
-    height: calc(100vh - 55px);
+    background-color: #ebeff1;
+    /* height: calc(100vh - 55px); */
+    height: 100%;
     width: 100%;
 }
 
@@ -119,6 +121,7 @@ li span {
 
 .examples {
     display: inline-block;
+    background-color: #fff;
     text-align: center;
     height: 300px;
     width: 100%;
@@ -146,10 +149,10 @@ li span {
     }
 }
 
-.glowing-border {
+/* .glowing-border {
     border: 2px solid #dadada;
     border-radius: 7px;
-}
+} */
 
 .examples img:hover { 
     outline: none;
@@ -163,4 +166,61 @@ li span {
     /* min-height: calc(100vh - 410px); */
     height: calc(100% - 358px);
     width: 100%;
+}
+
+.example-description {
+    margin-left: 5%;
+    width: 90%;
+    border-top: 1px solid rgb(250, 250, 250);
+    /* background-color: #f1f0eb; */
+    display: inline-block;
+    margin-bottom: 60px;
+}
+
+.example-description h1 {
+    margin: 0 80px;
+    font-size: 20px;
+}
+
+.example-description h3 {
+    font-size: 15px;
+    margin: 20px 0 5px 80px;
+}
+
+.example-description p,
+.example-description li
+{
+    margin: 0 80px;
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+.desc-left,
+.desc-right
+{
+    float: left;
+    width: 30%;
+    margin-top: 30px;
+}
+
+.desc-right {
+    width: 60%;
+}
+
+.desc-left i {
+    padding: 1px;
+    border-radius: 100%;
+    color: #4158d0;
+    margin-right: 15px;
+}
+
+.desc-left i:hover { 
+    outline: none;
+    border-color: #9ecaed;
+    box-shadow: 0 0 10px #9ecaed;
+}
+.desc-left .git {
+    margin-left: 80px;
+    font-size: 30px;
+    margin-top: 30px;
 }
