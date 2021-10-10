@@ -4,7 +4,7 @@ let progressBarAnimationDOM = document.querySelector('style');
 let progressBarDOM = document.querySelector('.progress-bar');
 
 // Renders all 4 progress bars per section and separate animations for each
-function renderProgressBar(i) {
+function renderProgressBar(i, ind) {
     setTimeout(() => {
         for (let j = 1; j <= 4; j++) {
             progressBarAnimationDOM.innerHTML += `
@@ -15,7 +15,7 @@ function renderProgressBar(i) {
                 }
                 @keyframes left${j}{
                     100%{
-                    transform: rotate(${(data[i]['pb' + j] * 3.6) > 180 ? (data[i]['pb' + j] * 3.6 - 180) : 0}deg);    // Atitinka 50% desiniojo rutulio
+                    transform: rotate(${(data[i]['content' + ind]['pb' + j] * 3.6) > 180 ? (data[i]['content' + ind]['pb' + j] * 3.6 - 180) : 0}deg);    // Atitinka 50% desiniojo rutulio
                     }
                 }
                 .progress-bar${j} .circle .right .progress{
@@ -23,7 +23,7 @@ function renderProgressBar(i) {
                 }
                 @keyframes right${j}{
                 100%{
-                    transform: rotate(${(data[i]['pb' + j] * 3.6) < 180 ? (data[i]['pb' + j] * 3.6) : 180}deg);    // Atitinka 50% kairiojo rutulio
+                    transform: rotate(${(data[i]['content' + ind]['pb' + j] * 3.6) < 180 ? (data[i]['content' + ind]['pb' + j] * 3.6) : 180}deg);    // Atitinka 50% kairiojo rutulio
                     }
                 }
                 `
@@ -41,8 +41,8 @@ function renderProgressBar(i) {
                         </div>
                         </div>
                         </div>
-                        <div class="label1">${data[i]['label' + j]}</div>
-                        <div class="label2">Achievement: ${data[i]['pb' + j]}%</div>
+                        <div class="label1">${data[i]['content' + ind]['label' + j]}</div>
+                        <div class="label2">Achievement: ${data[i]['content' + ind]['pb' + j]}%</div>
                     </div>
                 `
         }
@@ -51,7 +51,7 @@ function renderProgressBar(i) {
     setTimeout(() => {
         const obj = document.querySelectorAll(".number");
         obj.forEach((element, index) => {
-            counter(element, 0, data[i]['pb' + (index + 1)], 800, data[i]['icon' + (index + 1)]);
+            counter(element, 0, data[i]['content' + ind]['pb' + (index + 1)], 800, data[i]['icon' + (index + 1)]);
 
         })
     }, 55);
@@ -66,24 +66,32 @@ function clearProgressBar() {
 // Renders example images 
 function renderExamples(i) {
     const examplesDOM = document.querySelector('.examples');
-    if (!data[i].img3) {
-        examplesDOM.innerHTML = `
-            <div class="examples-content" style="animation: examples .25s linear;">
-                <img src=${data[i].img1} alt="My work">
-                <img src=${data[i].img2} alt="My work">
-            </div>
-    `
-    } else {
+    if (data[i].img1 && data[i].img2 && data[i].img3) {
         examplesDOM.innerHTML = `
             <div class="examples-content" style="animation: examples .25s linear;">
                 <img src=${data[i].img1} alt="My work">
                 <img src=${data[i].img2} alt="My work" style="margin-left: 0;">
                 <img src=${data[i].img3} alt="My work" style="margin-left: 0;">
             </div>
-    `
+            `
+    } else if (data[i].img1 && data[i].img2) {
+        examplesDOM.innerHTML = `
+            <div class="examples-content" style="animation: examples .25s linear;">
+                <img src=${data[i].img1} alt="My work">
+                <img src=${data[i].img2} alt="My work">
+            </div>
+        `
+    } else {
+        examplesDOM.innerHTML = `
+            <div class="examples-content" style="animation: examples .25s linear;">
+                <img src=${data[i].img1} alt="My work">
+            </div>
+        `
     }
 
     document.querySelectorAll('img').forEach((x, j) => x.addEventListener('click', () => {
+        clearProgressBar();
+        renderProgressBar(i, j);
         const descriptionDOM = document.querySelector('.example-description');
         let featuresHTML = '';
         const li = [];
@@ -139,8 +147,8 @@ const navigationDOM = document.querySelectorAll('.navigation li');
 navigationDOM.forEach((element, index) => {
     element.addEventListener('click', () => {
         renderExamples(index);
-        clearProgressBar();
-        renderProgressBar(index);
+        // clearProgressBar();
+        // renderProgressBar(index);
         
 
     })
