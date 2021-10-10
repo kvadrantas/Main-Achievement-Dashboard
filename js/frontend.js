@@ -1,5 +1,19 @@
 import { data } from "./data/data.js";
 
+const fullScopeBarDOM = document.getElementById('full-scope-progress');
+const startDate = new Date("06/21/2021");
+const endDate = new Date('11/30/2021');
+const learningPeriod = endDate.getTime() - startDate.getTime();
+const currentPeriod = Date.now() - startDate.getTime();
+const currentProgress = Math.trunc((currentPeriod / learningPeriod * 100));
+fullScopeBarDOM.style.width = `${currentProgress }%`;
+
+let point = new Date("10/6/2021");
+point = point.getTime();
+point = point - startDate.getTime();
+console.log(point / learningPeriod * 100);
+
+
 let progressBarAnimationDOM = document.querySelector('style');
 let progressBarDOM = document.querySelector('.progress-bar');
 

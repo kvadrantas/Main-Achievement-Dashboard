@@ -179,6 +179,7 @@ li span {
     transform: translate(-50%);
     font-family: 'Roboto Condensed', sans-serif;
     color: #676f75;
+    font-size: 12px;
     /* line-height: 50px; */
 }
 
@@ -188,7 +189,6 @@ li span {
     left: 0;
     display: inline-block;
     height: 6px;
-    width: 90%;
     background-color: #aeb9c2;
     border-radius: 6px;
 }
@@ -229,25 +229,25 @@ li span {
 .stop2 {
     /* background-color: #e74d3d; */
     background-color: #aeb9c2;
-    left: 20%;
+    left: 14%;
 }
 
 .stop3 {
     /* background-color: #f39c12; */
     background-color: #aeb9c2;
-    left: 40%;
+    left: 32%;
 }
 
 .stop4 {
     /* background-color: #3498db; */
     background-color: #aeb9c2;
-    left: 60%;
+    left: 44%;
 }
 
 .stop5 {
     /* background-color: #4cd46c; */
     background-color: #aeb9c2;
-    left: 80%;
+    left: 66%;
 }
 
 .stop6 {
