@@ -41,7 +41,7 @@ function renderProgressBar(i, ind) {
                         </div>
                         </div>
                         </div>
-                        <div class="label1">${data[i]['content' + ind]['label' + j]}</div>
+                        <div class="label1">${data[i]['label' + j]}</div>
                         <div class="label2">Achievement: ${data[i]['content' + ind]['pb' + j]}%</div>
                     </div>
                 `
@@ -65,6 +65,7 @@ function clearProgressBar() {
 
 // Renders example images 
 function renderExamples(i) {
+    // Render images of work examples
     const examplesDOM = document.querySelector('.examples');
     if (data[i].img1 && data[i].img2 && data[i].img3) {
         examplesDOM.innerHTML = `
@@ -88,8 +89,10 @@ function renderExamples(i) {
             </div>
         `
     }
+    // ------------------------------------------
 
-    document.querySelectorAll('img').forEach((x, j) => x.addEventListener('click', () => {
+    // Adds event listeners on images, so then you click on each coresponding content with information appears
+    document.querySelectorAll('.examples img').forEach((x, j) => x.addEventListener('click', () => {
         clearProgressBar();
         renderProgressBar(i, j);
         const descriptionDOM = document.querySelector('.example-description');
@@ -129,6 +132,9 @@ function renderExamples(i) {
 
         `
     }));
+    document.querySelector('.examples img').click();
+    // ------------------------------------------
+
 }
 
 // Percentage counter
@@ -153,3 +159,5 @@ navigationDOM.forEach((element, index) => {
 
     })
 });
+
+renderExamples(0);

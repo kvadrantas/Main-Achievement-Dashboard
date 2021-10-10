@@ -10,26 +10,26 @@ const data = [
     icon2: '<i class="fab fa-js-square"></i>',
     icon3: '<i class="fab fa-node-js"></i>',
     icon4: '<i class="fab fa-react"></i>',
-    content1: {
+    content0: {
         h1: 'Simple HTML 1',
         pb1: 3,
         pb2: 0,
         pb3: 0,
         pb4: 0,
-        description: 'This is beginning of Javascript course and these 2 examples represent very first attempt to use some simple html tags',
-        features: ['Frontend - yes', 'Backend - no', 'Json Export - no', 'Json Fetch - no', 'Icon Fonts - yes', 'Responsive - no', 'Database - no', 'Express Server - no', 'Handlebars - no', 'DOM - no', 'Promises - no', 'HTML - yes', 'CSS - inline', 'Javascript - no', 'Node.js - no', 'React - no'],
+        description: '1 This is beginning of Javascript course and these 2 examples represent very first attempt to use some simple html tags',
+        features: ['Frontend - yes', 'Backend - no', 'Json Export - no', 'Json Fetch - no', 'Icon Fonts - no', 'Responsive - no', 'Database - no', 'Express Server - no', 'Handlebars - no', 'DOM - no', 'Promises - no', 'HTML - yes', 'CSS - inline', 'Javascript - no', 'Node.js - no', 'React - no'],
         p: 'afsldkjf asljdf alsdj falsdj flkasdj alsdjk',
         gitPreview: 'https://kvadrantas.github.io/2-serlokas/',
         gitRepository: 'https://github.com/kvadrantas/2-serlokas',
     },
-    content2: {
+    content1: {
         h1: 'Simple HTML 2',
         pb1: 8,
         pb2: 0,
         pb3: 0,
         pb4: 0,
-        description: 'This is beginning of Javascript course and these 2 examples represent very first attempt to use some simple html tags',
-        features: ['Frontend - yes', 'Backend - no', 'Json Export - no', 'Json Fetch - no', 'Icon Fonts - yes', 'Responsive - no', 'Database - no', 'Express Server - no', 'Handlebars - no', 'DOM - no', 'Promises - no', 'HTML - yes', 'CSS - yes', 'Javascript - no', 'Node.js - no', 'React - no'],
+        description: '2 This is beginning of Javascript course and these 2 examples represent very first attempt to use some simple html tags',
+        features: ['Frontend - yes', 'Backend - no', 'Json Export - no', 'Json Fetch - no', 'Icon Fonts - no', 'Responsive - no', 'Database - no', 'Express Server - no', 'Handlebars - no', 'DOM - no', 'Promises - no', 'HTML - yes', 'CSS - inline', 'Javascript - no', 'Node.js - no', 'React - no'],
         p: 'afsldkjf asljdf alsdj falsdj flkasdj alsdjk',
         gitPreview: 'https://kvadrantas.github.io/3-mergaite/',
         gitRepository: 'https://github.com/kvadrantas/3-mergaite',
@@ -50,7 +50,7 @@ const data = [
     icon2: '<i class="fab fa-js-square"></i>',
     icon3: '<i class="fab fa-node-js"></i>',
     icon4: '<i class="fab fa-react"></i>',
-    content1: {
+    content0: {
         h1: 'Sign Up Form',
         pb1: 19,
         pb2: 0,
@@ -62,7 +62,7 @@ const data = [
         gitPreview: 'https://kvadrantas.github.io/4-signup/',
         gitRepository: 'https://github.com/kvadrantas/4-signup',
     },
-    content2: {
+    content1: {
         h1: 'Comming Soon Website',
         pb1: 35,
         pb2: 4,
@@ -87,7 +87,7 @@ const data = [
     icon2: '<i class="fab fa-js-square"></i>',
     icon3: '<i class="fab fa-node-js"></i>',
     icon4: '<i class="fab fa-react"></i>',
-    content1: {
+    content0: {
         h1: 'Guess My Number Game',
         pb1: 13,
         pb2: 9,
@@ -99,7 +99,7 @@ const data = [
         gitPreview: 'https://kvadrantas.github.io/05-Guess-My-Number/',
         gitRepository: 'https://github.com/kvadrantas/05-Guess-My-Number',
     },
-    content2: {
+    content1: {
         h1: 'Pig Game',
         pb1: 24,
         pb2: 13,
@@ -111,7 +111,7 @@ const data = [
         gitPreview: 'https://kvadrantas.github.io/07-Pig-Game/',
         gitRepository: 'https://github.com/kvadrantas/07-Pig-Game',
     },
-    content3: {
+    content2: {
         h1: 'Vaskici Game',
         pb1: 25,
         pb2: 15,
@@ -126,7 +126,7 @@ const data = [
     },
     {
     img1: './jpg/7.png',
-    img2: './jpg/71.png',
+    // img2: './jpg/71.png',
     label1: 'HTML/CSS',
     label2: 'Javascript',
     label3: 'Node.js',
@@ -135,19 +135,19 @@ const data = [
     icon2: '<i class="fab fa-js-square"></i>',
     icon3: '<i class="fab fa-node-js"></i>',
     icon4: '<i class="fab fa-react"></i>',
-    content1: {
+    content0: {
         h1: 'Food Ordering Website',
         pb1: 100,
         pb2: 8,
         pb3: 0,
         pb4: 0,
         description: 'This is beginning of Javascript course and these 2 examples represent very first attempt to use some simple html tags',
-        features: ['Frontend - yes', 'Backend - no', 'Json Export - no', 'Json Fetch - no', 'Icon Fonts - no', 'Responsive - yes', 'Database - no', 'Express Server - no', 'Handlebars - no', 'DOM - yes', 'Promises - no', 'HTML - yes', 'CSS - yes', 'Javascript - yes', 'Node.js - no', 'React - no'],
+        features: ['Frontend - yes', 'Backend - no', 'Json Export - no', 'Json Fetch - no', 'Icon Fonts - yes', 'Responsive - yes', 'Database - no', 'Express Server - no', 'Handlebars - no', 'DOM - yes', 'Promises - no', 'HTML - yes', 'CSS - yes', 'Javascript - yes', 'Node.js - no', 'React - no'],
         p: 'afsldkjf asljdf alsdj falsdj flkasdj alsdjk',
         gitPreview: 'https://kvadrantas.github.io/Udemy1-HTML-CSS-Food/',
         gitRepository: 'https://github.com/kvadrantas/Udemy1-HTML-CSS-Food',
     },
-    content2: {
+    content1: {
         h1: 'Portfolio Website',
         pb1: 0,
         pb2: 0,
@@ -175,33 +175,33 @@ const data = [
     icon2: '<i class="fab fa-js-square"></i>',
     icon3: '<i class="fab fa-node-js"></i>',
     icon4: '<i class="fab fa-react"></i>',
-    content1: {
+    content0: {
         h1: 'Learning Dashboard',
         pb1: 13,
         pb2: 26,
         pb3: 14,
         pb4: 0,
         description: 'This is beginning of Javascript course and these 2 examples represent very first attempt to use some simple html tags',
-        features: ['Frontend - yes', 'Backend - no', 'Json Export - no', 'Json Fetch - no', 'Icon Fonts - no', 'Responsive - yes', 'Database - no', 'Express Server - no', 'Handlebars - no', 'DOM - yes', 'Promises - no', 'HTML - yes', 'CSS - yes', 'Javascript - yes', 'Node.js - no', 'React - no'],
+        features: ['Frontend - yes', 'Backend - yes', 'Json Export - yes', 'Json Fetch - yes', 'Icon Fonts - no', 'Responsive - yes', 'Database - no', 'Express Server - yes', 'Handlebars - no', 'DOM - yes', 'Promises - yes', 'HTML - yes', 'CSS - yes', 'Javascript - yes', 'Node.js - yes', 'React - no'],
         p: 'afsldkjf asljdf alsdj falsdj flkasdj alsdjk',
-        gitPreview: 'https://kvadrantas.github.io/Udemy1-HTML-CSS-Food/',
-        gitRepository: 'https://github.com/kvadrantas/Udemy1-HTML-CSS-Food',
+        gitPreview: 'https://rolandasseputis.lt/learning-dashboard/',
+        gitRepository: 'https://github.com/kvadrantas?tab=repositories&q=main-learning&type=&language=&sort=',
     },
-    content2: {
+    content1: {
         h1: 'Žmonės Information System',
         pb1: 40,
         pb2: 100,
         pb3: 100,
         pb4: 0,
         description: 'This is beginning of Javascript course and these 2 examples represent very first attempt to use some simple html tags',
-        features: ['Frontend - yes', 'Backend - no', 'Json Export - no', 'Json Fetch - no', 'Icon Fonts - no', 'Responsive - yes', 'Database - no', 'Express Server - no', 'Handlebars - no', 'DOM - yes', 'Promises - no', 'HTML - yes', 'CSS - yes', 'Javascript - yes', 'Node.js - no', 'React - no'],
+        features: ['Frontend - yes', 'Backend - yes', 'Json Export - yes', 'Json Fetch - yes', 'Icon Fonts - no', 'Responsive - yes', 'Database - yes', 'Express Server - yes', 'Handlebars - yes', 'DOM - yes', 'Promises - yes', 'HTML - yes', 'CSS - yes', 'Javascript - yes', 'Node.js - yes', 'React - no'],
         p: 'afsldkjf asljdf alsdj falsdj flkasdj alsdjk',
-        gitPreview: 'https://kvadrantas.github.io/Udemy1-HTML-CSS-Food/',
-        gitRepository: 'https://github.com/kvadrantas/Udemy1-HTML-CSS-Food',
+        gitPreview: 'https://rolandasseputis.lt:2949/zmones?',
+        gitRepository: 'https://github.com/kvadrantas/Main-Zmones-IS-SQL',
     },
     },
     {
-        img1: './jpg/10.png',
+        img1: './jpg/10.jpg',
         pb1: 0,
         pb2: 0,
         pb3: 0,
@@ -214,17 +214,17 @@ const data = [
         icon2: '<i class="fab fa-js-square"></i>',
         icon3: '<i class="fab fa-node-js"></i>',
         icon4: '<i class="fab fa-react"></i>',
-        content1: {
-            h1: 'Learning Dashboard',
-            pb1: 13,
-            pb2: 26,
-            pb3: 14,
+        content0: {
+            h1: 'React',
+            pb1: 0,
+            pb2: 0,
+            pb3: 0,
             pb4: 0,
-            description: 'This is beginning of Javascript course and these 2 examples represent very first attempt to use some simple html tags',
-            features: ['Frontend - yes', 'Backend - no', 'Json Export - no', 'Json Fetch - no', 'Icon Fonts - no', 'Responsive - yes', 'Database - no', 'Express Server - no', 'Handlebars - no', 'DOM - yes', 'Promises - no', 'HTML - yes', 'CSS - yes', 'Javascript - yes', 'Node.js - no', 'React - no'],
-            p: 'afsldkjf asljdf alsdj falsdj flkasdj alsdjk',
-            gitPreview: 'https://kvadrantas.github.io/Udemy1-HTML-CSS-Food/',
-            gitRepository: 'https://github.com/kvadrantas/Udemy1-HTML-CSS-Food',
+            description: '',
+            features: ['Frontend - no', 'Backend - no', 'Json Export - no', 'Json Fetch - no', 'Icon Fonts - no', 'Responsive - no', 'Database - no', 'Express Server - no', 'Handlebars - no', 'DOM - no', 'Promises - no', 'HTML - no', 'CSS - no', 'Javascript - no', 'Node.js - no', 'React - no'],
+            p: '',
+            gitPreview: '',
+            gitRepository: '',
         },
         }
 ]
