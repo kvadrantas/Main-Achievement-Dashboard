@@ -109,7 +109,7 @@ li span {
 .right-pane {
     height: 100%;
     margin-top: -5px;
-    width: calc(100% - 202px);
+    width: calc(100% - 203px);
     float: left;
 }
 .top-bar2 { 
