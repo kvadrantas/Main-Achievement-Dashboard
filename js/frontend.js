@@ -1,5 +1,16 @@
 import { data } from "./data/data.js";
 
+const stops = [
+    {name: 'zyro', date: new Date("12/08/2021")},
+    {
+        name: 'zyro job description', 
+        date: new Date(Date.now() - (Date.now() - new Date("12/8/2021").getTime())/2),  // iskaiciuojamas vidurys. Atisradus naujam objektui Date.now() - > new Date("mm/dd/yyy").getTime()
+        duration: (Date.now() - new Date("12/8/2021").getTime()) / 1000 / 60 / 60 / 24 / 30
+    }
+];
+
+document.getElementById('zyroduration').innerHTML = `(DURATION: ${stops[1].duration.toFixed(2)} months)`;
+
 const fullScopeBarDOM = document.getElementById('full-scope-progress');
 const startDate = new Date("06/21/2021");
 const endDate = new Date('11/30/2021');
@@ -8,11 +19,15 @@ const currentPeriod = Date.now() - startDate.getTime();
 const currentProgress = Math.trunc((currentPeriod / learningPeriod * 100));
 fullScopeBarDOM.style.width = `${currentProgress }%`;
 
-let point = new Date("10/6/2021");
-point = point.getTime();
-point = point - startDate.getTime();
-console.log(point / learningPeriod * 100);
-
+stops.forEach((stop, i) => {
+    const stopDom = document.getElementById(`stop${i + 7}`);
+    let point = stop.date;
+    point = point.getTime();
+    point = point - startDate.getTime();
+    console.log(new Date("2/8/2022"), stop.duration, `stop${i + 7}`, point / learningPeriod * 100);
+    
+    stopDom.style.left = `${point / learningPeriod * 100}%`
+});
 
 let progressBarAnimationDOM = document.querySelector('style');
 let progressBarDOM = document.querySelector('.progress-bar');

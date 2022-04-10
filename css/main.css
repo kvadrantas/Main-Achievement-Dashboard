@@ -162,6 +162,10 @@ li span {
     box-shadow: 0 0 10px #9ecaed;
 }
 
+.bar-container {
+    overflow-x: scroll;
+}
+
 .full-scope-bar {
     position: relative;
     display: inline-block;
@@ -191,7 +195,7 @@ li span {
     left: 0;
     display: inline-block;
     height: 6px;
-    background-color: #aeb9c2;
+    background-color: #4257d0;
     border-radius: 6px;
 }
 
@@ -200,7 +204,9 @@ li span {
 .stop3,
 .stop4,
 .stop5,
-.stop6 {
+.stop6,
+.stop7,
+.stop8 {
     position: absolute;
     top: -12px;
     left: 0;
@@ -217,7 +223,9 @@ li span {
 .stop3 i,
 .stop4 i,
 .stop5 i,
-.stop6 i {
+.stop6 i,
+.stop7 i,
+.stop8 i  {
     line-height: 30px;
     font-size: 15px;
 }
@@ -258,25 +266,44 @@ li span {
     left: 100%;
 }
 
+.stop7 {
+    /* background-color: #4cd46c; */
+    background-color: #aeb9c2;
+}
+
 .stop2 span,
 .stop4 span,
-.stop6 span   {
+.stop6 span {
     top: -24px;
 }
 
-.stop6 span   { 
+.stop6 span { 
     width: 60px;
     left: -30px;
 }
 
-.stop6 .spn1 {
+.stop7 span,
+.stop8 span { 
+    width: 160px;
+}
+
+.stop6 .spn1,
+.stop7 .spn1,
+.stop8 .spn1 {
     top: -5px;
     font-size: 10px;
 }
 
-.stop6 .spn2 {
+.stop6 .spn2,
+.stop7 .spn2,
+.stop8 .spn2 {
     top: 30px;
     font-size: 8px;
+}
+
+.stop7 .job {
+    color: #4257d0;
+
 }
 
 .dashboard {
@@ -368,6 +395,10 @@ li span {
 }
 
 @media (max-width: 650px) {
+    .full-scope-bar {
+        width: 180%;
+    }
+
     .left-pane {
         display: block;
         width: 100%;
