@@ -225,7 +225,7 @@ const data = [
             description: '',
             features: ['Frontend - no', 'Backend - no', 'Json Export - no', 'Json Fetch - no', 'Icon Fonts - no', 'Responsive - no', 'Database - no', 'Express Server - no', 'Handlebars - no', 'DOM - no', 'Promises - no', 'HTML - no', 'CSS - no', 'Javascript - no', 'Node.js - no', 'React - no'],
             p: '',
-            gitPreview: 'https://eshop-crud.rolandasseputis.lt/',
+            gitPreview: 'https://eshop-crud.rolandasseputis.lt:2549//',
             gitRepository: 'https://github.com/kvadrantas?tab=repositories&q=eshop-crud&type=&language=&sort=',
         },
         content1: {
